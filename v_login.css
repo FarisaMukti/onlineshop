@@ -1,0 +1,47 @@
+
+/* Fixed navbar */
+body {
+    padding-top: 2px;
+}
+/* General sizing */
+ul.dropdown-lr {
+  width: 300px;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+	.dropdown-lr h3 {
+		color: #eee;
+	}
+	.dropdown-lr label {
+		color: #eee;
+	}
+}
+.typewriter h1 {
+    padding-top: 30px;
+    font-size: 40px;
+    color: aqua;
+    min-height: 100%;
+    top: 50%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(0, 183, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    text-align: center;
+    animation: 
+      typing 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 20em }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgb(0, 183, 255);}
+    to{border-right-color: transparent;}
+  }
